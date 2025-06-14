@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CompareHub: Product Comparison</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light">
+    <nav class="navbar">
+      <div class="navbar-brand">CompareHub</div>
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="navbar-links" id="navbar-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#product-list">Products</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <button id="toggle-mode" class="icon-only">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="animate-slide">
+            Compare Top Phones <i class="fas fa-mobile-alt"></i>
+          </h1>
+          <p class="animate-fade">
+            Choose the best device for your needs by comparing features side by
+            side.
+          </p>
+          <a href="#product-list" class="hero-btn animate-pop"
+            >Get Started <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="hero-image animate-zoom">
+          <img src="assets/hero.png" alt="Phone Hero Image" />
+        </div>
+      </section>
+      <section class="products-section">
+        <h2 class="products-heading animate-slide-up">Our Top Products</h2>
+        <div class="product-list" id="product-list"></div>
+      </section>
+      <section class="comparison" id="comparison" style="display: none">
+        <h2 class="comparison-heading">Product Comparison</h2>
+        <div id="compare-table" class="compare-table"></div>
+        <button id="clear-comparison" class="clear-btn">
+          <i class="fas fa-trash-alt"></i> Clear All
+        </button>
+      </section>
+      <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h2>CompareHub</h2>
+            <p>
+              Helping you make the best buying decisions with smart product
+              comparisons.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Compare</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 CompareHub. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
